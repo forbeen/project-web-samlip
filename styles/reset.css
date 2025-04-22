@@ -15,3 +15,4 @@ legend {display:none;} /* 주석처럼 쓴 문장 가리는거 */
 input {border:0; outline:none;} /* 보이는 테두리도 있지만 클릭했을 때 보이는 테두리는 outline라고함 그것도 없는걸로 해야 */
 button {border:0; background:none; cursor:pointer;}
 table,tr,td,th {border-collapse:collapse;}/* table에 두줄 생기는거 초기화해주는거 */
+select, option {border:0; appearance:none;}/* appearance는 화살표모양 없애는거 */
