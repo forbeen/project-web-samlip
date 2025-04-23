@@ -1,0 +1,52 @@
+/* ir.css */
+#wrap main > *{
+    text-align:center;
+    /* main {} 여기에 줘도 됨 같은말임 */
+}
+#wrap main .path {
+    padding:12px 60px 12px 0;
+    text-align:right;
+    letter-spacing:0;
+    font-size:0.75rem;
+    background-color:#FCFCFC;
+    border:1px solid #f1f1f1;
+    border-left:0; border-right:0;
+}
+#wrap main .path a {
+    color:#808080;
+}
+#wrap main .path img {
+    margin:0px 12px;
+}
+#wrap main .path em {
+    color:#000;
+}
+#wrap main h1 {
+    font-size:3.75rem;
+    font-weight:700;
+    margin-bottom:20px;
+    padding-top:80px;
+}
+#wrap main > p {
+    font-size:1.125rem;
+    margin-bottom:80px;
+    line-height:1.5;
+    font-weight:500;
+    color:#808080;
+}
+#wrap main .bg {
+    background-color:#fcfcfc;
+    padding:80px 0;
+}
+/* 레이아웃 위치/정렬 기법 종류 inline-block, float, fles, grid, position */
+#wrap main .bg .ir_list {overflow:hidden;}
+#wrap main .bg .ir_list a {
+    float:left;
+    text-align:left;
+}
+#wrap main .bg .ir_list a h2 {
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+#wrap main .bg .ir_list a p {}
