@@ -52,6 +52,7 @@
     margin:0 auto;
     display:flex; flex-flow:row nowrap;
     text-align:center;
+    width:max-content;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth1 > li {
     margin-right:100px;
@@ -75,18 +76,20 @@
     position:absolute; left:0; top:92px;
     width:100%;
     text-align:center;
+    padding:50px 0;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 {
-    background-color: aqua;
     display:flex; flex-flow:row nowrap;
     justify-content:center;
 }
-#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li {
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 > li {
     background-color: chartreuse;
+    margin-right:30px;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > h2 {
     font-size:1.063rem;
     font-weight:700;
+    margin-bottom:14px;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > h2 a {
     font-size:1.063rem;
@@ -99,9 +102,16 @@
     background-color: #fff;
     border:1px solid #eee;
 }
-#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 {}
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-content:center;
+    width:220px;
+}
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 li {
     background-color: blueviolet;
+    margin-bottom:16px;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 li a {}
 /* ===================================================e:브랜드 lnb */
