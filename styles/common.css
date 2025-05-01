@@ -43,6 +43,7 @@
     padding:50px 0;
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
     display:none;
+    z-index:999;
 }
 #wrap header nav #gnb > li:first-child:hover .lnb_bg {display:block;}/* company */
 #wrap header nav #gnb > li:nth-child(3):hover .lnb_bg {display:block;}/* ir */
@@ -77,6 +78,7 @@
     text-align:center;
     padding:50px 0;
     display:none; /* none */
+    z-index:999;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 {
     display:flex; flex-flow:row nowrap;
