@@ -44,11 +44,10 @@
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
     display:none;
 }
-#wrap header nav #gnb > li:first-child:hover .lnb_bg {display:block;}
-#wrap header nav #gnb > li:nth-child(3):hover .lnb_bg {display:block;}
-#wrap header nav #gnb > li:nth-child(2):hover .lnb_brand_bg {display:block;}
+#wrap header nav #gnb > li:first-child:hover .lnb_bg {display:block;}/* company */
+#wrap header nav #gnb > li:nth-child(3):hover .lnb_bg {display:block;}/* ir */
+#wrap header nav #gnb > li:nth-child(2):hover .lnb_brand_bg {display:block;}/* brand 작업하는 친구들만 block하고 나머진 none하기 */
 #wrap header nav #gnb > li .lnb_bg .lnb_depth1 {
-    background-color: yellow;
     width:max-content;
     margin:0 auto;
     display:flex; flex-flow:row nowrap;
@@ -65,7 +64,6 @@
     font-weight:700;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
-    border:1px solid red;
     margin-top: 14px;
 }
 #wrap header nav #gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {margin-bottom:16px;}
@@ -78,16 +76,17 @@
     width:100%;
     text-align:center;
     padding:50px 0;
-    display: none;
+    display:none; /* none */
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 {
     display:flex; flex-flow:row nowrap;
     justify-content:center;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 > li {
-    background-color: chartreuse;
     margin-right:30px;
+    height:max-content;
 }
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 > li:first-child {}
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > h2 {
     font-size:1.063rem;
     font-weight:700;
@@ -100,23 +99,30 @@
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > a {
     display:block;
 }
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 > li:first-child > a:last-child {margin-top:16px;}
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > a img {
-    background-color: #fff;
-    border:1px solid #eee;
+    border:1px solid #ddd;
+    filter:grayscale(100%) brightness(110%);
+}
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > a img:hover {
+    filter: grayscale(0) brightness(100%);
+    border:1px solid #000;
 }
 #wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 {
     display:flex;
     flex-flow:row wrap;
     justify-content:space-between;
-    align-content:center;
-    width:220px;
+    width:225px;
 }
-#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 li {
-    background-color: blueviolet;
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 > li {
     margin-bottom:16px;
+    width:105px; height:45px; /* 이미지 밑에 작은 여백이 설정 안했는데도 계속 생겨서 강제로 이미지 크기만큼 사이즈를 주니까 사라짐 */
 }
-#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 li a {}
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 > li a {}
+#wrap header nav #gnb > li .lnb_brand_bg .lnb_brand_depth1 li > .lnb_brand_depth2 > li a img {}
 /* ===================================================e:브랜드 lnb */
+/* gnb.2 brands 서브메뉴 개별 디자인 (방법2) */
+/* lnb_bg의 이름에 id를 추가로 또 주거나 이름변경 -> 브랜드만 잡히게끔 하는 방법 */
 /* ===================================================우측 보조메뉴 */
 #wrap header .right_menu {
     display:flex;
